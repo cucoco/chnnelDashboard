@@ -1,0 +1,10 @@
+.layout-wrapper {
+    .layout-config-sidebar {
+        &.p-sidebar {
+            .p-sidebar-content {
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+        }
+    }
+}
