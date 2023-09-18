@@ -9,13 +9,12 @@ import CommonView from '@/views/CommonView.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    { path: '/', component: AppLayout, children: [
-
-      { path: '/', name: '통합로그', component: MainView },
-      { path: '/eventLog', name: 'eventLog', component: EventView  },
-      { path: '/xmpLog', name: 'xmpLog', component: XMPView  },
-      { path: '/common', name: 'common', component: CommonView  }
-
+    { path: '/', component: AppLayout, 
+      children: [
+        { path: '/', name: '통합로그', component: MainView },
+        { path: '/eventLog', name: 'eventLog', component: EventView  },
+        { path: '/xmpLog', name: 'xmpLog', component: XMPView  },
+        { path: '/common', name: 'common', component: CommonView  }
     ]},
   ]
 });
